@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
+
+
+/*-------------------UNIVERSAL------------------*/
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #1e1e1e;
+  overflow-x: hidden;
+}
+
+
+
+/*-------------------HEADER-----------------------*/
+
+
+
+header{
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  background-image: url(assets/bg.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+.title{
+  position: fixed;
+  top: 5%;
+  height: 80vh;
+  width: 100vw;
+  background-image: url(assets/title.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+/*-----------------MAIN------------------*/
+
+
+
+main{
+  width: 100vw;
+  position: absolute;
+  top: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main div{
+  position: relative;
+  min-height: 90vh;
+  width: 100%;
+  padding: 4em 8%;
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.color{
+  background-color: #253C69;
+}
+.color p, .color h1, .color h2{
+  color: #fff;
+}
+
+
+
+/*---------------BRANCH---------------*/
+
+
+
+main div h1{
+  text-align: left;
+  font-size: 4em;
+}
+main div h2{
+  text-align: left;
+  font-size: 1.6em;
+}
+
+main div h1, main div p, main div h2{
+  text-align: left;
+  padding: 0.2em;
+  max-width: 1000px;
+  margin: 0.6em 0;
+  word-wrap: break-word;
+}
+main div p{
+  font-size: 0.96em;
+  color: #161616;
+}
+main div img{
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.tab{
+  padding-left: 3em;
+}
+
+.me{
+  background-image: url(assets/final33.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 120vh;
+
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 680px) {
+  iframe{
+    width: 100vw;
+  }
+  .tab{
+  padding-left: 1em; 
+  }
+}
+
+
+/*--------------------FOOTER----------------------*/
+
+
+
+.footer{
+  min-height: 15vh;
+  background: #253C69;
+}
+.footer p a{
+  color: #1e1e1e;
+  padding: 3px 5px;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+.footer p a:hover{
+  cursor: pointer;
+  transition: 200ms;
+  color: #fff;
+}
+#not-link{
+  cursor: default;
+  text-decoration: none;
+}
